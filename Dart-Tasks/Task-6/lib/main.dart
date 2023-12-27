@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'salomon_bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -476,21 +477,38 @@ class MyHomePage extends StatelessWidget {
               ],
             ))
       ]),
-      bottomNavigationBar: const Row(children: [
-        Expanded(
-          child: Icon(Icons.widgets_outlined),
-        ),
-        Expanded(
-          child: Icon(Icons.library_books_outlined),
-        ),
-        Expanded(
-          child: Icon(Icons.home_outlined),
-        ),
-        Expanded(child: Icon(Icons.book_online_outlined)),
-        Expanded(
-          child: Icon(Icons.library_add_check),
-        )
-      ]),
+      bottomNavigationBar: SalomonBottomBar(
+          currentIndex: _currentIndex,
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          items: [
+            SalomonBottomBarItem(
+                icon: const Icon(Icons.library_books),
+                title: const Text("data"),
+                selectedColor: Colors.grey),
+            SalomonBottomBarItem(
+                icon: const Icon(Icons.book),
+                title: const Text("Books"),
+                selectedColor: Colors.teal),
+            SalomonBottomBarItem(
+              icon: const Icon(Icons.home_outlined),
+              title: const Text("Home"),
+              selectedColor: Colors.orange,
+            ),
+            SalomonBottomBarItem(
+                icon: const Icon(Icons.my_library_books_outlined),
+                title: const Text("Libray"),
+                selectedColor: Colors.blueAccent),
+            SalomonBottomBarItem(
+                icon: const Icon(Icons.person),
+                title: const Text("Account"),
+                selectedColor: Colors.yellowAccent),
+            )
+          ]),
     );
   }
 }
+     
