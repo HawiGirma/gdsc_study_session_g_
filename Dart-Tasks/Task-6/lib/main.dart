@@ -484,15 +484,15 @@ class MyHomePage extends StatelessWidget {
               _currentIndex = index;
             });
           },
-          items: [
+         items: [
             SalomonBottomBarItem(
                 icon: const Icon(Icons.library_books),
-                title: const Text("data"),
-                selectedColor: Colors.grey),
+                title: const Text(""),
+                selectedColor: Color(0xffe77b34)),
             SalomonBottomBarItem(
                 icon: const Icon(Icons.book),
                 title: const Text("Books"),
-                selectedColor: Colors.teal),
+                selectedColor: Color(0xffe77b34)),
             SalomonBottomBarItem(
               icon: const Icon(Icons.home_outlined),
               title: const Text("Home"),
@@ -501,14 +501,12 @@ class MyHomePage extends StatelessWidget {
             SalomonBottomBarItem(
                 icon: const Icon(Icons.my_library_books_outlined),
                 title: const Text("Libray"),
-                selectedColor: Colors.blueAccent),
+                selectedColor: Color(0xffe77b34)),
             SalomonBottomBarItem(
                 icon: const Icon(Icons.person),
                 title: const Text("Account"),
-                selectedColor: Colors.yellowAccent),
-            )
+                selectedColor: Color(0xffe77b34)),
           ]),
     );
   }
 }
-     
