@@ -230,7 +230,7 @@ class MyHomePage extends StatelessWidget {
                       child: Row(
                     children: [
                       Icon(Icons.military_tech_outlined),
-                      Text('Technology')
+                      Text('Tech')
                     ],
                   ))),
             ),
