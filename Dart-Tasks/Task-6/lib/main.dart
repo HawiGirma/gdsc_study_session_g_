@@ -321,7 +321,7 @@ class MyHomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Image.asset(
-                            'images/amharic.jpg',
+                            'images/napolean.png',
                             width: 100,
                           ),
                           const Text('sientific-books'),
@@ -334,7 +334,7 @@ class MyHomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Image.asset(
-                            'images/mind.png.png',
+                            'images/mind.png',
                             width: 100,
                           ),
                           const Text('recipie')
@@ -400,7 +400,7 @@ class MyHomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Image.asset(
-                            'images/mind.png',
+                           'images/napolean.png',
                             width: 100,
                           ),
                           const Text('self help books'),
@@ -464,7 +464,7 @@ class MyHomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Image.asset(
-                            'images/mind.png',
+                           'images/napolean.png',
                             width: 100,
                           ),
                           const Text('self-help books'),
